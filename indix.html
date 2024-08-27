@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- Daisy Ui links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- manrope-font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/4c26ee01ed.js" crossorigin="anonymous"></script>
+<!-- Manrope-font-style  -->
+<style> .font-manrope{
+     font-family: "Manrope", sans-serif;
+} </style>
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'b-primary': '#ABEF5F',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-manrope">
+  <!-- Header-section -->
+   <header class="md:container mx-auto">
+<nav>
+  <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Rinterio</a>
+        <div class="navbar-end">
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Service</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Blogs</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-b-primary rounded-full">Book Consult</a>
+      </div>
+    </div>
+</nav>
+   </header>
+   <!-- Main-section -->
+    <main>
+<section class="py-10 bg-gray-100">
+<div class="container mx-auto px-4">
+<!-- Main content wrapper -->
+<div class="max-w-7xl mxauto flex flex-col lg:flex-row items-center p-6 gap-6">
+<!-- Text-section -->
+<div class="lg:w-1/2 space-y-4 text-center lg:text-left">
+<!-- About us button -->
+<button class="btn btn-outline bg-white btn-sm rounded-full mb-4">About Us</button>
+<!-- Main heading -->
+<h2 class="text-4xl font-bold text-[#212121]">We design thoughtful, <br> liveable spaces</h2>
+<!-- P-text  -->
+ <p class="text-[#494949]">The barn house captivates with its blend of rustic charm and 
+  modern sophistication, featuring weathered wood, sleek metal accents</p>
+  <!-- Service list............ -->
+   <div class="space-y-4">
+<div class="flex items-center gap-4 bg-white py-6 px-4 rounded-lg shadow-sm">
+<img src="assets/commercial.png" alt="#">
+<div>
+<h3 class="font-semibold text-gray-800">Commercial</h3>
+<p class="text-gray-500 text-sm">The barn house captivates with its blend of rustic charm and modern</p>
+</div>
+</div>
+<!-- residential service -->
+<div class="flex items-center gap-4 bg-white py-6 px-4 rounded-lg shadow-sm">
+<img src="assets/residential.png" alt="#">
+<div>
+  <h3 class="font-semibold text-gray-800">Residential</h3>
+  <p class="text-gray-500 text-sm">The barn house captivates with its blend of rustic charm and modern</p>
+</div>
+</div>
+   </div>
+</div>
+<!-- Image section -->
+<div class="lg:w-1/2">
+<img class="rounded-lg shadow-lg max-w-7xl" src="assets/Rectangle.png" alt="">
+  </div>
+</div>
+</div>
+
+</section>
+<section class="py-10 bg-gray-100">
+<div class="container mx-auto px-4">
+<div class="bg-white shadow-lg rounded-lg p-6 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+ <div>
+  <!-- stat 1 -->
+  <div class="text-4xl font-bold text-gray-800"><i class="fa-regular fa-message"></i></div>
+  <div class="text-4xl font-bold text-gray-800">235+</div>
+  <p class="text-gray-500 mt-2">Happy Client Review</p>
+ </div>
+ <!-- stat 2-->
+  <div>
+    <div class="text-4xl font-bold text-gray-800"><i class="fa-brands fa-creative-commons-nd"></i></div>
+ <div class="text-4xl font-bold text-gray-800">50+</div>
+ <p class="text-gray-500 mt-2">Work Departments</p>
+</div>
+<!-- stat 3 -->
+ <div>
+  <div class="text-4xl font-bold text-gray-800"><i class="fa-solid fa-people-group"></i></div>
+  <div class="text-4xl font-bold text-gray-800">30k+</div>
+ <p class="text-gray-500 mt-2">Our Happy Client</p>
+ </div>
+ <!-- stat 4 -->
+  <div>
+    <div class="text-4xl font-bold lg:mx-auto text-gray-800"><i class="fa-solid fa-person-circle-plus"></i></div>
+    <div class="text-4xl font-bold lg:mx-auto text-gray-800">307+</div>
+ <p class="text-gray-500 mt-2">Staff Members</p>
+  </div>
+</div>
+</section>
+<section class="container max-w-7xl mx-auto py-12 px-4">
+  <div class="text-center mb-8">
+<h2 class="text-4xl font-bold">Our Works Process</h2>
+<p class="mt-4 text-gray-600">
+  The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+</p>
+  </div>
+
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+<div class="bg-[#E7C1D3]"></div>
+</div>
+</section>
+    </main>
+    <!-- Footer-section -->
+     <footer>
+
+     </footer>
+</body>
+</html>
