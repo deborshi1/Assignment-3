@@ -30,15 +30,15 @@
     }
   </script>
 </head>
-<body class="font-manrope">
+<body class="font-manrope bg-[#FFFFFF]">
   <!-- Header-section -->
-<header class="bg-white shadow-md py-4 relative">
+<header class="bg-[#FFFFFF] shadow-md py-4 relative">
   <div class="container mx-auto px-4">
     <!-- Top navigation bar -->
      <div class="flex justify-between items-center">
       <!-- logo -->
-       <div class="flex items-center space-x-2">
-        <i class="fa-solid rounded-full bg-lime-400  fa-arrow-right"></i>
+       <div class="flex items-center gap-1 space-x-2">
+        <i class="fa-solid rounded-full p-2 -rotate-45 bg-lime-400  fa-arrow-right"></i>
         <a class="text-2xl font-bold text-black" href="#"> Rinterio</a>
        </div>
        <!-- mobile menu checkbox -->
@@ -58,9 +58,14 @@
 
           </nav>
          </div>
+         
+         <div class="bg-white hidden rounded-full"><i class="fa-solid mx-3  rounded-full fa-magnifying-glass"></i></div>
+         <div><i class="fa-solid mx-4 fa-cart-shopping"></i></div>
+        
          <!-- Book consult button -->
           <div class="hidden md:block">
-            <a class="btn btn-succes bg-[#ABEF5F] rounded-full text-black px-6 py-2" href="">BookConsult<i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-succes bg-[#ABEF5F] rounded-full text-black px-6 py-2" href="">BookConsult <!-- <i class="fa-solid text-white rounded-full w-7 h-7 -rotate-45 bg-black
+             fa-arrow-right"></i> --></a>
           </div>
      </div>
 <!-- Mobile menu content -->
@@ -80,7 +85,7 @@
    <h1 class="text-4xl md:text-black  md:text-5xl fony-bold text-black my-10">A barn house of this design has a <br> striking appearance
    </h1>
    <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
-<a class="btn btn-succes rounded-full mt-6 mb-12 px-8 bg-[#ABEF5F] py-3 text-black" href=""> View Details <i class="fa-solid fa-arrow-right"></i></a>
+<a class="btn btn-succes rounded-full mt-6 mb-12 px-8 bg-lime-200 py-3 text-black" href=""> View Details <i class="fa-solid rounded-full -rotate-45 text-black bg-lime-400 w-7 h-7 p-2 fa-arrow-right"></i></a>
 </div>
   </div>
 
@@ -89,6 +94,9 @@
     <main>
 <section class="py-10 bg-gray-100 relative">
 <div class="container mx-auto px-4 mt-4">
+  <div class="absolute top-6 left-1">
+    <img src="assets/Vector.png" alt="">
+  </div>
 <!-- Main content wrapper -->
 <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch p-6 gap-6">
 <!-- Text-section -->
@@ -288,7 +296,7 @@
     <h3 class="card-taitle text-gray-900"> How to choose the furniture right for your home.</h3>
     <p class="text-gray-600 text-sm">The barn house captivates with its blend of rustic charm and modern</p>
     <div class="card-actions mt-4">
-<a class="text-success font-semibold inline-flex items-center" href="">Read More <i class="fas fa-arrow-right ml-2"></i> </a>
+<a class="text-success font-semibold text-black inline-flex items-center" href="">Read More <i class="fas fa-arrow-right bg-lime-400 p-2 -rotate-45 rounded-full ml-2"></i> </a>
     </div>
   </div>
 </div>
@@ -305,7 +313,7 @@
         <h3 class="card-taitle text-gray-900"> How to choose the furniture right for your home.</h3>
         <p class="text-gray-600 text-sm">The barn house captivates with its blend of rustic charm and modern</p>
         <div class="card-actions mt-4">
-    <a class="text-success font-semibold inline-flex items-center" href="">Read More <i class="fas fa-arrow-right ml-2"></i> </a>
+    <a class="text-success font-semibold text-black inline-flex items-center" href="">Read More <i class="fas fa-arrow-right bg-lime-400 p-2 -rotate-45 rounded-full ml-2"></i> </a>
         </div>
       </div>
     </div>
@@ -322,8 +330,8 @@
         </div>
         <h3 class="card-taitle text-gray-900"> How to choose the furniture right for your home.</h3>
         <p class="text-gray-600 text-sm">The barn house captivates with its blend of rustic charm and modern</p>
-        <div class="card-actions mt-4">
-    <a class="text-success font-semibold inline-flex items-center" href="">Read More <i class="fas fa-arrow-right ml-2"></i> </a>
+        <div class="card-actions gap-1 mt-4">
+    <a class="text-success font-semibold inline-flex text-black items-center" href="">Read More <i class="fas fa-arrow-right bg-lime-400 p-2 -rotate-45 rounded-full ml-2"></i> </a>
         </div>
       </div>
     </div>
@@ -351,7 +359,7 @@
   </div>
   <textarea placeholder="Write your message here" class="textarea textared-bordered w-full"></textarea>
   <!-- submit button  -->
-   <button class="btn btn-accent bg-[#ABEF5F] w-full rounded-full hover:bg-lime-400 border-0">SendMail <i class="fa-solid fa-arrow-right"></i></button>
+   <button class="btn btn-accent bg-[#ABEF5F] w-full rounded-full hover:bg-lime-400 border-0">SendMail <i class="fa-solid -rotate-45 rounded-full p-1 text-white bg-black fa-arrow-right"></i></button>
 </form>
 </div>
 </section>
@@ -360,7 +368,7 @@
      <footer class="bg-[#1C1C1C] text-white text-center py-10 px4">
 <div class="mb-6">
 <div class="flex justify-center items-center mb-3">
-  <span class="bg-[#ABEF5F] p-2 rounded-full text-gray-900 text-xl"><i class="fa-solid fa-arrow-right"></i></span>
+  <span class=" rounded-full"><i class="fa-solid bg-lime-400 p-2 -rotate-45 rounded-full text-black fa-arrow-right"></i></span>
   <h1 class="text-2xl font-bold ml-2 text-white">Rinterio</h1>
 </div>
 <p class="text-[#737373] max-w-lg mx-auto text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
@@ -377,7 +385,7 @@
  </div>
  <!-- action button  -->
   <div class="flex justify-center">
-<button class="btn btn-accent bg-[#ABEF5F] border-0 text-[#1C1C1C] hover:bg-lime-400 text-lg font-semibold rounded-full mb-10 mt-8 max-w-xs"> Book Consult <i class="fa-solid fa-arrow-right"></i></span></button>
+<button class="btn btn-accent bg-[#ABEF5F] border-0 text-[#1C1C1C] hover:bg-lime-400 text-lg font-semibold rounded-full       mb-10 mt-8 max-w-xs"> Book Consult <i class="fa-solid bg-black p-2 -rotate-45 text-white rounded-full fa-arrow-right"></i></span></button>
   </div>
      </footer>
 </body>
