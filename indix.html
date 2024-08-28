@@ -32,54 +32,59 @@
 </head>
 <body class="font-manrope">
   <!-- Header-section -->
-   <header class="md:container mx-auto">
-<nav>
-  <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+<header class="bg-white shadow-md py-4 relative">
+  <div class="container mx-auto px-4">
+    <!-- Top navigation bar -->
+     <div class="flex justify-between items-center">
+      <!-- logo -->
+       <div class="flex items-center space-x-2">
+        <i class="fa-solid rounded-full bg-lime-400  fa-arrow-right"></i>
+        <a class="text-2xl font-bold text-black" href="#"> Rinterio</a>
+       </div>
+       <!-- mobile menu checkbox -->
+        <input class="peer hidden" id="menu-toggle" type="checkbox">
+        <!-- mobile menu icons -->
+        <label class="md:hidden cursor-pointer" for="menu-tooggle">
+          <i class="fas fa-bars text-2xl text-gray-800"></i>
+        </label>
+        <!-- centered navigation menu for desktop -->
+         <div class="hidden md:flex justify-center items-center space-x-8 w-full">
+          <nav class="flex space-x-8 items-center">
+            <a class="text-gray-800 hober:text-gray-500" href="#">Home</a>
+            <a class="text-gray-800 hober:text-gray-500" href="#">Services</a>
+            <a class="text-gray-800 hober:text-gray-500" href="#">Portfolio</a>
+            <a class="text-gray-800 hober:text-gray-500" href="#">Blogs</a>
+            <a class="text-gray-800 hober:text-gray-500" href="#">Contact Us</a>
+
+          </nav>
+         </div>
+         <!-- Book consult button -->
+          <div class="hidden md:block">
+            <a class="btn btn-succes bg-[#ABEF5F] rounded-full text-black px-6 py-2" href="">BookConsult<i class="fa-solid fa-arrow-right"></i></a>
           </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>Service</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact us</a></li>
-          </ul>
-        </div>
-        <a class="font-bold text-xl">Rinterio</a>
-        <div class="navbar-end">
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>Service</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Blogs</a></li>
-          <li><a>Contact us</a></li>
-        </ul>
-      </div>
-      </div>
-      <div class="navbar-end">
-        <a class="btn bg-b-primary rounded-full">Book Consult</a>
-      </div>
-    </div>
-</nav>
-   </header>
+     </div>
+<!-- Mobile menu content -->
+ <div class="peer-checked:block hidden md:hidden transition-transform transform bg-white w-full mt-4 shadow-lg absolute left-0 z-10">
+  <nav class="flex flex-col space-y-4 p-4">
+    <a class="text-gray-800 hober:text-gray-500" href="#">Home</a>
+    <a class="text-gray-800 hober:text-gray-500" href="#">Services</a>
+    <a class="text-gray-800 hober:text-gray-500" href="#">Portfolio</a>
+    <a class="text-gray-800 hober:text-gray-500" href="#">Blogs</a>
+    <a class="text-gray-800 hober:text-gray-500" href="#">Contact Us</a>
+<a class="btn btn success rounded-fulltext-blackpx-6 py-2" href=""> Book Consult</a>
+  </nav>
+</div>
+<div class="text-center mt-16">
+  <!-- Image -->
+   <img class="mx-auto mb-8 shadow-lg" src="assets/banner.png" alt="Barn house image">
+   <h1 class="text-4xl md:text-black  md:text-5xl fony-bold text-black my-10">A barn house of this design has a <br> striking appearance
+   </h1>
+   <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+<a class="btn btn-succes rounded-full mt-6 mb-12 px-8 bg-[#ABEF5F] py-3 text-black" href=""> View Details <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+  </div>
+
+</header>
    <!-- Main-section -->
     <main>
 <section class="py-10 bg-gray-100 relative">
@@ -123,8 +128,8 @@
 
 </section>
 <!-- Review section  -->
-<section class="py-10 bg-gray-100">
-<div class="container mx-auto px-4">
+<section class="py-10 ">
+<div class="container mx-auto mt-12 px-4">
 <div class="bg-white shadow-lg rounded-lg p-6 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
  <div>
   <!-- stat 1 -->
@@ -207,15 +212,57 @@
   </div> 
 </section>
 <!-- Our Latest Portfolio -->
- <section>
-  <div class="text-center mb-10">
-    <button class="btn btn accents mb-4 bg-lime-100 hover:bg-lime-200 rounded-full w-60 h-full border-0">
-      <i class="fa-solid fa-arrow-right"></i>Explore our Latest works
-    </button>
-    <h2 class="text-4xl font-bold mb-4">Our Latest Portfolio</h2>
-    <p class="text-lg text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
-    </div>
- </section>
+<section class="container max-w-7xl mx-auto py-12 px-4">
+  
+  <div class="text-center mb-8">
+   <a class="btn rounded-full mb-4"><i class="fa-solid fa-arrow-right"></i>About Member</a>
+
+   <h2 class="text-3xl font-bold">
+     Our Some New Teammate
+   </h2>
+   <p class="mt-4 text-gray-600">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+ </div>
+ <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+   <div class="bg-gray-200 p-6 rounded-lg shadow">
+     <div class="space-x-4 mb-4">
+      
+          <h3 class="text-xl font-semibold">MD Rahul</h3>
+     </div>
+     <p>From:Bangladesh</p>
+     <p>Email:rahul2r@gmail.com</p>
+     <p>Age:20</p>
+   </div> 
+
+   <div class="bg-gray-200 p-6 rounded-lg shadow">
+     <div class="space-x-4 mb-4">
+       
+          <h3 class="text-xl font-semibold">Ifath Hassan</h3>
+     </div>
+     <p>From:Bangladesh</p>
+     <p>Email:ifath@gmail.com</p>
+     <p>Age:32</p>
+   </div> 
+
+   <div class="bg-gray-200 p-6 rounded-lg shadow">
+     <div class="space-x-4 mb-4">
+          <h3 class="text-xl font-semibold">Alisa</h3>
+     </div>
+     <p>From:Canada</p>
+     <p>Email:alisa12@gmail.com</p>
+     <p>Age:23</p>
+   </div> 
+
+   <div class="bg-gray-200 p-6 rounded-lg shadow">
+     <div class="space-x-4 mb-4">
+          <h3 class="text-xl font-semibold">Obisek roy</h3>
+     </div>
+     <p>From:India</p>
+     <p>Email:obisek3343@gmail.com</p>
+     <p>Age:26</p>
+   </div> 
+
+ </div> 
+</section>
  <!-- Read Our Articles and News -->
   <section class="bg-gray-100 py-10">
 <div class="container mx-auto px-4">
@@ -235,7 +282,7 @@
   </figure>
   <div class="card-body">
     <div class="flex items-center text-sm text-gray-500 mb-2">
-      <span class="mr-2"><i class="fas fa-calender-alt"></i> July 14, 2024</span>
+      <span class="mr-2"><i class="fas fa-calendar-alt"></i> July 14, 2024</span>
       <span><i class="fas fa-user"></i> By Admin</span>
     </div>
     <h3 class="card-taitle text-gray-900"> How to choose the furniture right for your home.</h3>
@@ -252,7 +299,7 @@
       </figure>
       <div class="card-body">
         <div class="flex items-center text-sm text-gray-500 mb-2">
-          <span class="mr-2"><i class="fas fa-calender-alt"></i> July 14, 2024</span>
+          <span class="mr-2"><i class="fas fa-calendar-alt"></i> July 14, 2024</span>
           <span><i class="fas fa-user"></i> By Admin</span>
         </div>
         <h3 class="card-taitle text-gray-900"> How to choose the furniture right for your home.</h3>
@@ -270,7 +317,7 @@
       </figure>
       <div class="card-body">
         <div class="flex items-center text-sm text-gray-500 mb-2">
-          <span class="mr-2"><i class="fas fa-calender-alt"></i> July 14, 2024</span>
+          <span class="mr-2"><i class="fas fa-calendar-alt"></i> July 14, 2024</span>
           <span><i class="fas fa-user"></i> By Admin</span>
         </div>
         <h3 class="card-taitle text-gray-900"> How to choose the furniture right for your home.</h3>
@@ -330,7 +377,7 @@
  </div>
  <!-- action button  -->
   <div class="flex justify-center">
-<button class="btn btn-accent bg-[#ABEF5F] border-0 text-[#1C1C1C] hover:bg-lime-400 text-lg font-semibold rounded-full  max-w-xs"> Book Consult <i class="fa-solid fa-arrow-right"></i></span></button>
+<button class="btn btn-accent bg-[#ABEF5F] border-0 text-[#1C1C1C] hover:bg-lime-400 text-lg font-semibold rounded-full mb-10 mt-8 max-w-xs"> Book Consult <i class="fa-solid fa-arrow-right"></i></span></button>
   </div>
      </footer>
 </body>
